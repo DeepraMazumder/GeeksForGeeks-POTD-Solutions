@@ -41,11 +41,9 @@ Constraints:
 class Solution:
     def areIsomorphic(self, str1, str2):
         if len(str1) != len(str2):
-            return False
-        
+            return False        
         mapping = {}
-        visited = set()
-        
+        visited = set()        
         for char1, char2 in zip(str1, str2):
             if char1 in mapping:
                 if mapping[char1] != char2:
@@ -54,6 +52,5 @@ class Solution:
                 if char2 in visited:
                     return False
                 mapping[char1] = char2
-                visited.add(char2)
-        
+                visited.add(char2)        
         return True
