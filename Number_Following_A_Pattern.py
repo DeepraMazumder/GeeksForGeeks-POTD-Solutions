@@ -38,15 +38,11 @@ Constraints:
 class Solution:
     def printMinNumberForPattern(ob,S):
         result = ""
-        stack = []
-    
-        current_max = 0
-    
+        stack = []    
+        current_max = 0    
         for i in range(len(S) + 1):
-            stack.append(i + 1)
-    
+            stack.append(i + 1)    
             if i == len(S) or S[i] == 'I':
                 while stack:
-                    result += str(stack.pop())
-    
+                    result += str(stack.pop())    
         return result
