@@ -20,7 +20,7 @@ The solutions provided in this repository are my own work and understanding of t
 ## Connect
 For any queries, suggestions, or discussions regarding the solutions or DSA in general, feel free to reach out to me via:
 
-- Email: [deepra2003mazumder@gmail.com](mailto:deepra2003mazumder@gmail.com)
+- Email: deepra2003mazumder@gmail.com
 - LinkedIn: https://www.linkedin.com/in/deepra-mazumder
 
 ## Acknowledgments
