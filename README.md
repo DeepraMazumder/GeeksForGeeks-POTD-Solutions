@@ -1,6 +1,6 @@
 # GeeksForGeeks-POTD-Solutions
 
-This repository contains my solutions to the Problem of The Day (POTD) challenges sourced from the Geeks for Geeks website. I regularly update this repository with solutions to various problems as part of my practice and improvement in problem-solving skills, particularly in Data Structures and Algorithms (DSA).
+This repository contains my solutions to the Problem of The Day (POTD) challenges sourced from the GeeksforGeeks website. I regularly update this repository with solutions to various problems as part of my practice and improvement in problem-solving skills, particularly in Data Structures and Algorithms (DSA).
 
 ## Purpose
 The primary objective of this repository is to document and showcase my journey of solving daily challenges offered by Geeks for Geeks. By sharing my solutions, I aim to:
@@ -20,11 +20,11 @@ The solutions provided in this repository are my own work and understanding of t
 ## Connect
 For any queries, suggestions, or discussions regarding the solutions or DSA in general, feel free to reach out to me via:
 
-- Email: [YourEmail@example.com](mailto:deepra2003mazumder@gmail.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/deepra-mazumder)
+- Email: deepra2003mazumder@gmail.com
+- LinkedIn: https://www.linkedin.com/in/deepra-mazumder
 
 ## Acknowledgments
-- [Geek for Geeks](https://www.geeksforgeeks.org/) for providing an excellent platform with a diverse range of problems.
+- [GeekforGeeks](https://www.geeksforgeeks.org/) for providing an excellent platform with a diverse range of problems.
 - Inspirations drawn from the vast community of developers and problem solvers.
 
 Happy coding and problem-solving! 🚀📚✨
