@@ -22,7 +22,7 @@ Value to be inserted = 1
    /
   1
 Value to be inserted = 4
-  5                     4
+  5                        4
  /    LR rotation        /  \
 1    ----------->       1   5
  \
@@ -105,7 +105,6 @@ public:
         }
         return N->height;
     }
-
     int getBalance(Node *N)
     {
         if (N == NULL)
@@ -114,36 +113,26 @@ public:
         }
         return height(N->left) - height(N->right);
     }
-
     Node *leftRotation(Node *x)
     {
         Node *y = x->right;
         Node *T2 = y->left;
-
         y->left = x;
         x->right = T2;
-
         x->height = 1 + max(height(x->left), height(x->right));
         y->height = 1 + max(height(y->left), height(y->right));
-
         return y;
     }
-
     Node *rightRotation(Node *x)
     {
         Node *y = x->left;
         Node *T2 = y->right;
-
         y->right = x;
         x->left = T2;
-
         x->height = 1 + max(height(x->left), height(x->right));
         y->height = 1 + max(height(y->left), height(y->right));
-
         return y;
     }
-
-    /*You are required to complete this method */
     Node *insertToAVL(Node *node, int data)
     {
         if (node == NULL)
@@ -162,11 +151,8 @@ public:
         {
             return node;
         }
-
         node->height = 1 + max(height(node->left), height(node->right));
-
         int balance = getBalance(node);
-
         if (balance > 1 && data < node->left->data)
         {
             return rightRotation(node);
