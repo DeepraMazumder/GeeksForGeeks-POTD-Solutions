@@ -30,15 +30,23 @@ All the characters of String S lies in the set {'0', '1', '2'}
 '''
 
 class Solution:
-    def smallestSubstring(self, S):
-        dicti={}
-        start=0
-        mini=10**9
-        for i in range(len(S)):
-            dicti[S[i]]=dicti.get(S[i],0)+1
-            while(start<i and dicti[S[start]]>1):
-                dicti[S[start]]-=1
-                start+=1
-            if len(dicti)==3:
-                mini=min(mini,i-start+1)
-        return mini if mini!=10**9 else -1
+    def smallestSubstring(self, s):
+        ans=float('inf')
+        if len(set(s))<=2:
+            return -1
+        zero,one,two=-1,-1,-1
+        for i in range(len(s)):
+            if s[i]=='0':
+                zero=i
+            elif s[i]=='1':
+                one=i
+            else:
+                two=i
+            if one!=-1 and two!=-1 and zero!=-1:
+                mx=max([zero,one,two])
+                mn=min([zero,one,two])
+                ans=min(ans,mx-mn+1)
+        if ans!=float('inf'):
+            return ans
+        else:
+            return -1
