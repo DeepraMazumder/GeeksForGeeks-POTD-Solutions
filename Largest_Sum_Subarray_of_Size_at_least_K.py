@@ -37,13 +37,21 @@ Constraints:
 '''
 
 class Solution():
-    def maxSumWithK(self, a, n, k):
-        mn={-1:0}
-        ans=-float('inf')
-        pfs=a[:]
-        for i,v in enumerate(a):
-            if i>=1:
-                pfs[i]+=pfs[i-1]
-            mn[i]=min(mn.get(i-1,float('inf')),pfs[i])
-            ans=max(ans,pfs[i]-mn.get(i-k,float('inf')))
+    def maxSumWithK(self, arr, n, k):
+        i,j = 0,0
+        currsum = 0
+        ans = float('-inf')
+        last = 0   
+        while j<n:
+            currsum += arr[j]
+            if j-i+1 == k:
+                ans = max(ans,currsum)
+            elif j-i+1 > k:
+                last += arr[i] 
+                i += 1
+                if last<0: 
+                    currsum -= last
+                    last = 0
+                ans = max(ans,currsum)
+            j += 1        
         return ans
