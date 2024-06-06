@@ -29,8 +29,8 @@ Expected Time Complexity: O(n).
 Expected Auxiliary Space: O(1).
 
 Constraints:
-1<=n<=10^5
-1<=a[]<=10^6
+1 <= n <= 10^5
+1 <= a[] <= 10^6
 */
 
 class Solution 
